@@ -1,0 +1,44 @@
+.estructura{
+    display: grid;
+    grid-template-areas: "header header"
+                         "main aside"
+                         "main aside"
+                         "footer footer";
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 2fr 1fr 1fr; */
+    grid-gap: 5px;
+    /* grid-row-gap: 0px; */
+}
+header{
+    /* background-color: yellow; */
+    /* background:linear-gradient(to left,#f0c32d,#dcdf49) ; */
+    /* background:#fdef22e3; */
+    background-image: url(../img/dynamic.jpg);
+    background-size: cover;
+    grid-area:header;
+    margin: 5px;
+}
+main{
+    /* background-image: url(../img/abstract.jpg); */
+    grid-area:main;
+    margin: 5px;
+}
+aside{
+    grid-area:aside;
+    margin: 5px;
+}
+footer{
+    /* background:linear-gradient(to left,#f2b704,#f5ea06); */
+    grid-area:footer;
+    /* background-color: black; */
+    /* background-image:url(../img/dynamic.jpg) ;
+    background-size: cover; */
+    background-image: url(../img/tool.jpg.crdownload);
+    background-size: cover;
+    margin: 5px;
+}
+/* h4{
+   background: yellow;
+   color: black; 
+   padding: 5px;
+} */
