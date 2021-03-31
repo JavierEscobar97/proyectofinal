@@ -187,7 +187,52 @@ body{
         text-align: center;
         }
 }
+#grillac {
+    display: grid;
+    grid-template-areas: 
+   "headerc headerc"
+   "filtro identificacion"
+   "items items"
+   "footer footer";
+    grid-template-rows: auto;
+    grid-template-columns: 20% auto;//repeat(2,1fr);
+    grid-gap: 5px; }
 
+#headerc{
+      grid-area: headerc;
+  }
+.identificacion{
+    grid-area: identificacion;
+    /* padding: 3.125rem; */
+    font-size: 2.8125em;
+    font-weight: bold;
+    /* text-align:center; */
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    //border-bottom:thick double #32a1ce;
+}
+  #filtro {
+    grid-area: filtro;
+    padding: 0.625em;
+    font-size: 1.25em; 
+    border-right:thick double #030303; 
+}
+  
+   #items {
+    grid-area: items;
+    //display: grid;
+    padding: 1.875em;   
+    }
+    .contprod{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        align-items:center;
+        justify-content:space-between;
+    } 
+    
 @media screen and(min-width:780px)and(max-width:1024px){
     body{
         font-size: 17px;
