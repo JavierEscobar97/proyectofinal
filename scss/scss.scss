@@ -2,7 +2,6 @@
     padding:0;
     margin:0;
 }
-
 body{
     //background: rgb(251, 255, 14);
     background: rgb(255, 255, 255);
@@ -86,13 +85,13 @@ body{
 }
 .volante{
     /* background: rgb(255, 255, 255); */
-    grid-area: volante;
+   grid-area: volante;
    display: grid;
-   grid-gap: 0,3125em;
+   grid-gap: 0.3125em;
    grid-template-areas: "volante_parrafo"
                         "imagen";
     grid-template-columns: repeat(1,1fr);
-    grid-template-rows: 20% 80%;
+    grid-template-rows: repeat(2,auto);
 }
 .imagen{
     grid-area: imagen;
