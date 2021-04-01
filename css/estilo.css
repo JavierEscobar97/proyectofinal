@@ -165,25 +165,38 @@ body {
     text-align: center; }
 
 #grillac {
+  width: 95%;
+  max-width: 80.625em;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin: auto;
   display: grid;
   grid-template-areas: "headerc headerc" "filtro identificacion" "items items" "footer footer";
   grid-template-rows: auto;
-  grid-template-columns: 20% auto;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 5px; }
 
 #headerc {
   grid-area: headerc; }
 
-.identificacion {
+.headerc__subti--estilo {
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 3.125em;
+  text-align: center; }
+
+#identificacion {
   grid-area: identificacion;
-  /* padding: 3.125rem; */
   font-size: 2.8125em;
+  font-family: 'Dela Gothic One', cursive;
+  background-image: url(../img/abstract.jpg);
+  background-size: cover;
+  color: white;
   font-weight: bold;
-  /* text-align:center; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  border-radius: 1.25em; }
 
 #filtro {
   grid-area: filtro;
@@ -214,7 +227,9 @@ body {
     grid-gap: 5px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, auto);
-    grid-template-areas: "header header" "volante contenido" "footer footer"; } }
+    grid-template-areas: "header header" "volante contenido" "footer footer"; }
+  #grillac {
+    font-size: 16px; } }
 
 @media screen and (min-width: 480px) and (max-width: 780px) {
   body {
@@ -224,7 +239,17 @@ body {
     grid-gap: 5px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, auto);
-    grid-template-areas: "header" "volante" "contenido" "footer"; } }
+    grid-template-areas: "header" "volante" "contenido" "footer"; }
+  #grillac {
+    font-size: 10px;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "headerc" "filtro"  "identificacion" "items" "footer";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-gap: 5px; }
+  #filtro {
+    border-right: none; } }
 
 @media screen and (max-width: 480px) {
   body {
@@ -244,4 +269,14 @@ body {
     grid-template-areas: "uno" "dos" "tres" "cuatro";
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 15% 40% 40% auto;
-    grid-gap: 5px; } }
+    grid-gap: 5px; }
+  #grillac {
+    margin: auto;
+    font-size: 8px;
+    display: grid;
+    grid-template-areas: "headerc" "filtro"  "identificacion" "items" "footer";
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-gap: 5px; }
+  #filtro {
+    border-right: none; } }
